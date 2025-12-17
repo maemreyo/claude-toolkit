@@ -48,17 +48,25 @@ This is the fastest way to test the plugin without publishing to GitHub.
     /structure --dry-run
     ```
 
-## Method 2: GitHub Distribution (For Teams)
+## Method 2: GitHub Distribution (Recommendation)
 
-To share this plugin with your team, host it on a GitHub repository.
+To use the version hosted on GitHub:
 
-1.  **Prepare Metadata**:
-    Ensure `.claude-plugin/plugin.json` matches this schema:
+1.  **Add the Marketplace**:
+    Register the repository as a marketplace source:
+    ```bash
+    /plugin marketplace add maemreyo/english-tutor-plugin
+    ```
+
+    **Configuration Reference**
+    For this to work, the repository must contain these files:
+
+    `.claude-plugin/plugin.json`:
     ```json
     {
       "name": "english-tutor",
       "version": "1.0.0",
-      "description": "English learning assistant and grammar structure analyst",
+      "description": "English learning assistant...",
       "commands": [
         "./commands/structure.md"
       ],
@@ -67,33 +75,33 @@ To share this plugin with your team, host it on a GitHub repository.
       ]
     }
     ```
-    *Note: Paths must start with `./` and end with extension (e.g., `.md`).*
 
-2.  **Prepare Marketplace Definition**:
-    Ensure `.claude-plugin/marketplace.json` defines the source correctly:
+    `.claude-plugin/marketplace.json`:
     ```json
     {
-      "name": "local-english-tutor",
-      "owner": { "name": "local" },
+      "name": "maemreyo-english-tutor",
+      "owner": {
+        "name": "maemreyo"
+      },
       "plugins": [
         {
           "name": "english-tutor",
           "description": "English learning assistant...",
-          "source": "./" 
+          "source": "./"
         }
       ]
     }
     ```
-    *Note: When pushing to GitHub, you might want to rename "local-english-tutor" to something more specific to your team.*
 
-3.  **Push to GitHub**:
-    Initialize repo and push all files in `workspace/english-tutor` to GitHub.
-
-4.  **Install from GitHub**:
-    Teammates can install using:
+2.  **Install the Plugin**:
+    Install the plugin from the new source:
     ```bash
-    /plugin marketplace add owner/repo-name
-    /plugin install english-tutor
+    /plugin install english-tutor@maemreyo-english-tutor
+    ```
+
+3.  **Verify**:
+    ```bash
+    /structure --dry-run
     ```
 
 ## Usage

@@ -1,7 +1,7 @@
 {
-  "name": "local-english-tutor",
+  "name": "maemreyo-english-tutor",
   "owner": {
-    "name": "local"
+    "name": "maemreyo"
   },
   "plugins": [
     {
