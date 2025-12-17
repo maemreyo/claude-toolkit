@@ -1,21 +1,22 @@
-Scan and fill content for English grammar structure files with `status: pending`.
+Scan and fill content for English structure files with `status: pending`.
 
-[Extended thinking: This command orchestrates the scanning of files and dispatching of agents to analyze each structure. Uses Robust Folder Discovery strategy to find the files.]
+[Extended thinking: This command orchestrates the scanning of files and dispatching of agents to analyze each grammar structure.]
 
 ## Configuration Options
 
 ### Parameters
 - `--path=<path>`: Custom path to structure files directory
-- `--limit=<n>`: Limit number of files to process (default: all)
+- `--limit=<n>`: Limit total number of files to process
+- `--chunk=<n>`: Number of files to process per agent call (default: 5)
 - `--dry-run`: List files only, do not process
 - `--research`: Enable web search for additional context (uses more tokens)
 
 ## Phase 1: Folder Discovery
 
 1. **Find Structure Directory**
-   - Prompt: "Find the directory containing structure files with priority:
+   - Prompt: "Find the directory containing structure/grammar files with priority:
      1. If `--path` provided → use it
-     2. Look for `30_Structures` in `workspace/english/` (or similar)
+     2. Look for `10_Structures` in `workspace/english/` (or similar)
      3. Look for folder matching pattern `*[Ss]tructure*` in `workspace/`
      4. If not found → ask user for path"
    - Expected output: Absolute path to directory
@@ -31,55 +32,57 @@ Scan and fill content for English grammar structure files with `status: pending`
    - If `--dry-run`: Show list and exit
    - Else: Proceed to Phase 3
 
-## Phase 3: Processing
+## Phase 3: Processing (Batch Mode)
 
-4. **Process Each File**
+4. **Process Files in Batches**
+   - Logic: Group the pending files into chunks of size `--chunk` (default: 5)
    - Use Task tool with subagent_type="english-tutor:structure-analyst" (or "structure-analyst" if running locally)
-   - Prompt for each file: "Analyze structure `{filename}` and fill content into file.
+   - Prompt for each BATCH: "Analyze the following grammar structure files (Batch of X):
+     {list_of_filenames_in_batch}
+
+     Configuration:
      - Plugin base: {baseDir}
      - Template path: {baseDir}/skills/english-grammar/references/template.md
      - ⛔ DO NOT use web search - use internal knowledge only
      - Maintain original callout format
-     - Fill `[[ word ]]` with actual words
-     - Update `status: pending` → `status: done`
-     - File path: {absolute_path}
+     - Fill `[[ structure ]]` with real concepts
+     - Update `status: pending` → `status: done` for ALL files in this batch
      - **IMPORTANT: Write all content in English**"
-   - Expected output: Fully filled file
+   - Expected output: All files in the batch updated successfully
 
 ## Phase 4: Reporting
 
 5. **Summary**
    - Number of files processed successfully
+   - Number of batches executed
    - List of failed files (if any)
    - Execution time
 
 ## Execution Examples
 
 ```bash
-# Process all pending files
+# Process all pending files (default chunk: 5)
 /structure
 
+# Process with larger chunks
+/structure --chunk=7
+
 # Process with custom path
-/structure --path=workspace/english/30_Structures
+/structure --path=workspace/english/10_Structures
 
 # List files only
 /structure --dry-run
-
-# Limit to 5 files
-/structure --limit=5
 ```
 
 ## Success Criteria
 
 - All `status: pending` files updated to `status: done`
 - Content filled completely following template
-- Obsidian links `[[ word ]]` filled with real words
-- Flashcards contain 7 cards in correct format
+- Grammar rules detailed and accurate
+- Token usage optimized via batching
 
 ## Error Handling
 
 - Folder not found → Ask user
 - Invalid format → Skip, log error
-- Analysis failure → Keep `status: pending`, log error
-
-Structure arguments: $ARGUMENTS
+- Analysis failure → Continue to next file in batch, report error

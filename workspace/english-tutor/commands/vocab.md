@@ -1,12 +1,13 @@
 Scan and fill content for English vocabulary files with `status: pending`.
 
-[Extended thinking: This command orchestrates the scanning of files and dispatching of agents to analyze each vocabulary word. Uses Robust Folder Discovery strategy to find the files.]
+[Extended thinking: This command orchestrates the scanning of files and dispatching of agents to analyze each vocabulary word.]
 
 ## Configuration Options
 
 ### Parameters
 - `--path=<path>`: Custom path to vocabulary files directory
-- `--limit=<n>`: Limit number of files to process (default: all)
+- `--limit=<n>`: Limit total number of files to process
+- `--chunk=<n>`: Number of files to process per agent call (default: 5)
 - `--dry-run`: List files only, do not process
 - `--research`: Enable web search for additional context (uses more tokens)
 
@@ -31,42 +32,46 @@ Scan and fill content for English vocabulary files with `status: pending`.
    - If `--dry-run`: Show list and exit
    - Else: Proceed to Phase 3
 
-## Phase 3: Processing
+## Phase 3: Processing (Batch Mode)
 
-4. **Process Each File**
+4. **Process Files in Batches**
+   - Logic: Group the pending files into chunks of size `--chunk` (default: 5)
    - Use Task tool with subagent_type="english-tutor:vocab-analyst" (or "vocab-analyst" if running locally)
-   - Prompt for each file: "Analyze vocabulary word `{filename}` and fill content into file.
+   - Prompt for each BATCH: "Analyze the following vocabulary files (Batch of X):
+     {list_of_filenames_in_batch}
+
+     Configuration:
      - Plugin base: {baseDir}
      - Template path: {baseDir}/skills/english-vocabulary/references/template.md
      - ⛔ DO NOT use web search - use internal knowledge only
      - Maintain original callout format
      - Fill `[[ word ]]` with actual words
-     - Update `status: pending` → `status: done`
-     - File path: {absolute_path}
+     - Update `status: pending` → `status: done` for ALL files in this batch
      - **IMPORTANT: Write all content in English**"
-   - Expected output: Fully filled file
+   - Expected output: All files in the batch updated successfully
 
 ## Phase 4: Reporting
 
 5. **Summary**
    - Number of files processed successfully
+   - Number of batches executed
    - List of failed files (if any)
    - Execution time
 
 ## Execution Examples
 
 ```bash
-# Process all pending files
+# Process all pending files (default chunk: 5)
 /vocab
+
+# Process with larger chunks
+/vocab --chunk=7
 
 # Process with custom path
 /vocab --path=workspace/english/20_Vocabulary
 
 # List files only
 /vocab --dry-run
-
-# Limit to 5 files
-/vocab --limit=5
 ```
 
 ## Success Criteria
@@ -74,12 +79,13 @@ Scan and fill content for English vocabulary files with `status: pending`.
 - All `status: pending` files updated to `status: done`
 - Content filled completely following template
 - Obsidian links `[[ word ]]` filled with real words
+- Token usage optimized via batching
 - Flashcards contain 5 cards in correct format
 
 ## Error Handling
 
 - Folder not found → Ask user
 - Invalid format → Skip, log error
-- Analysis failure → Keep `status: pending`, log error
+- Analysis failure → Continue to next file in batch, report error
 
 Vocab arguments: $ARGUMENTS
