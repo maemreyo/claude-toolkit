@@ -15,6 +15,13 @@ Analyze an English grammar structure (from filename) and fill in the Obsidian te
 - Highlight common mistakes.
 - Create useful flashcards for Spaced Repetition.
 
+## Tool Restrictions
+> [!CAUTION] Token Optimization
+> - **DO NOT use Web Search** unless explicitly told "Research mode: true"
+> - Use your **internal knowledge only** for grammar structure analysis
+> - Read the **embedded template** from `skills/english-grammar/SKILL.md`
+> - If unsure about a structure, provide your best knowledge instead of searching
+
 ## Capabilities
 
 ### Structure Analysis

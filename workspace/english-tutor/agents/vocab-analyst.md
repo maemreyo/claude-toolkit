@@ -16,6 +16,13 @@ Analyze an English vocabulary word (from filename) and fill in the Obsidian temp
 - Highlight common mistakes.
 - Create useful flashcards for Spaced Repetition.
 
+## Tool Restrictions
+> [!CAUTION] Token Optimization
+> - **DO NOT use Web Search** unless explicitly told "Research mode: true"
+> - Use your **internal knowledge only** for vocabulary analysis
+> - Read the **embedded template** from `skills/english-vocabulary/SKILL.md`
+> - If unsure about IPA or etymology, provide your best knowledge instead of searching
+
 ## Capabilities
 
 ### Word Analysis

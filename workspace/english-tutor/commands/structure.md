@@ -8,6 +8,7 @@ Scan and fill content for English grammar structure files with `status: pending`
 - `--path=<path>`: Custom path to structure files directory
 - `--limit=<n>`: Limit number of files to process (default: all)
 - `--dry-run`: List files only, do not process
+- `--research`: Enable web search for additional context (uses more tokens)
 
 ## Phase 1: Folder Discovery
 
@@ -35,11 +36,13 @@ Scan and fill content for English grammar structure files with `status: pending`
 4. **Process Each File**
    - Use Task tool with subagent_type="english-tutor:structure-analyst" (or "structure-analyst" if running locally)
    - Prompt for each file: "Analyze structure `{filename}` and fill content into file using the template.
-     - Read skill `english-grammar/SKILL.md` for writing guide
+     - Read skill `english-grammar/SKILL.md` for writing guide and embedded template
+     - Use your internal knowledge ONLY (DO NOT use web search)
      - Maintain original callout format
      - Fill `[[ word ]]` with actual words
      - Update `status: pending` → `status: done`
      - File path: {absolute_path}
+     - Research mode: {--research flag present: true/false}
      - **IMPORTANT: Write all content in English**"
    - Expected output: Fully filled file
 
