@@ -64,4 +64,6 @@ Keep the entire markdown structure of the template, replacing:
 - `{{STRUCTURE_NAME}}` → actual structure name
 - `...` → actual content
 - `[[ ]]` → `[[ actual_word ]]`
+- Use `|` instead of `/` inside links: `[[take sb|st around]]` (NOT `[[take sb/st around]]`)
+- **Relations/Connections MUST be 2+ words** (e.g., `[[make sense]]`, NOT `[[make]]`)
 - `status: pending` → `status: done`

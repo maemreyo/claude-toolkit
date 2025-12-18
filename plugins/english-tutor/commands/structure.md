@@ -46,6 +46,8 @@ Scan and fill content for English structure files with `status: pending`.
      - ⛔ DO NOT use web search - use internal knowledge only
      - Maintain original callout format
      - Fill `[[ structure ]]` with real concepts
+     - Use `|` instead of `/` inside links: `[[take sb|st around]]` (NOT `[[take sb/st around]]`)
+     - **Relations/Connections MUST be 2+ words** (e.g., `[[make sense]]`, NOT `[[make]]`)
      - Update `status: pending` → `status: done` for ALL files in this batch
      - **IMPORTANT: Write all content in English**"
    - Expected output: All files in the batch updated successfully
