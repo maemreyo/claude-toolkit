@@ -39,10 +39,23 @@ Analyze a batch of English vocabulary words and fill in the templates for each f
    a. Read the target file content
    b. Extract word from filename
    c. Fill each section using your internal knowledge
-   d. Generate strictly 7 flashcards as defined in the template
+   d. Generate strictly 12 flashcards as defined in the template
    e. Update `status: pending` → `status: done`
    f. Save the file
 3. Report summary of processed files
+4. **IMPORTANT FIELDS:** Ensure all sections and flashcard fields are filled:
+   - Main section: Include "💡 Word Vibe & Story" with Personality, Memory Hook, and Etymology Story
+   - Card 1: "Meaning & Mental Model" - add "🧠 **Mental Model:** <Short Vietnamese explanation using English keywords>"
+   - Card 3: "Usage & Analysis" - add analysis of why the word works
+   - Card 4: "Collocations by Logic" - group by logic type with VN notes
+   - Card 5: "Word Upgrade" card (The "Writer's Rewrite")
+   - Card 6: "Nuance Barrier" comparison card
+   - Card 7: "Scenario Reaction" card
+   - Card 8: "Etymology Story" card
+   - Card 9: "Word Family & Roots"
+   - Card 10: "IPA Decoding (with Context)"
+   - Card 11: "Mistake Hunter" error correction card
+   - Card 12: "Antonym Flip" card
 
 ## Output Format
 - Keep exact callout format (`> [!info]`, etc.)

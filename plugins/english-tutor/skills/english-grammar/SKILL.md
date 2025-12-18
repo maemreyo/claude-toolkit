@@ -11,7 +11,7 @@ Guide to analyzing and presenting English grammar structures in Obsidian format.
 
 > [!CAUTION] Token Optimization
 > - **ABSOLUTELY NO WEB SEARCH** - Use internal knowledge only
-> - Read template from: `{baseDir}/references/template.md`
+> - Read template from: `{pluginBase}/assets/tpl_Structure.md`
 > - DO NOT search for files - paths are provided explicitly
 
 ## When to Use This Skill
@@ -22,7 +22,7 @@ Guide to analyzing and presenting English grammar structures in Obsidian format.
 
 ## Template Location
 
-**Path:** `{baseDir}/references/template.md`
+**Path:** `{pluginBase}/assets/tpl_Structure.md`
 
 When generating content:
 1. Read the template file from the path above
@@ -165,6 +165,7 @@ Use these symbols:
 🧩 **Pattern Analysis:** What is the structure pattern for **{{STRUCTURE_NAME}}**?
 ?
 > 🏗️ **Structure:** [Component 1] + [Component 2] ...
+> 🧠 **Logic:** <VN Logic for remembering this pattern>
 
 ---
 
@@ -173,6 +174,7 @@ Use these symbols:
 🤔 **Meaning:** What does **{{STRUCTURE_NAME}}** express?
 ?
 > 📖 **Function:** <Definition/Function>
+> 💡 **Core Vibe:** <Short VN explanation of the "feeling" (e.g., formal regret, polite suggestion)>
 
 ---
 
@@ -181,14 +183,16 @@ Use these symbols:
 ❓ **Usage:** When should you use **{{STRUCTURE_NAME}}**?
 ?
 > 📝 **Context:** <Usage Context (Formal/Informal/Academic)>
+> 🚦 **Signal:** <When to trigger this structure? (VN explanation)>
 
 ---
 
-### Card 4: Example
+### Card 4: Example & Analysis
 
 ✍️ **Production:** Create a sentence with **{{STRUCTURE_NAME}}** about <topic>
 ?
 > 🧪 **Example:** <Example Sentence>
+> 🔍 **Analysis:** <Why this structure works here (VN/EN mix)>
 
 ---
 
@@ -196,15 +200,17 @@ Use these symbols:
 
 🕵️ **Spot the Error:** What's wrong with: "<Incorrect Sentence>"
 ?
-> 🛠️ **Correction:** <Explanation of error>
+> 🛠️ **Correction:** <Correct Sentence>
+> 🚫 **Trap:** <Explain the common mistake in VN>
 
 ---
 
-### Card 6: Comparison
+### Card 6: Comparison (Nuance)
 
 🆚 **Comparison:** How is **{{STRUCTURE_NAME}}** different from [[<related_structure>]]?
 ?
-> ⚖️ **Difference:** <Detailed comparison>
+> ⚖️ **Difference:** <Detailed comparison (VN/EN mix)>
+> 🧱 **The Barrier:** <The key distinction>
 
 ---
 
@@ -213,31 +219,33 @@ Use these symbols:
 🔄 **Transformation:** Transform this sentence using **{{STRUCTURE_NAME}}**: "<Source Sentence>"
 ?
 > 🔄 **Result:** <Target Sentence>
+> 🧠 **Shift:** <What changed in the meaning/nuance? (VN)>
 
 ---
 
-### Card 8: Writer's Rewrite
+### Card 8: Writer's Rewrite (Upgrade)
 
 ✍️ **Rewrite:** Upgrade this boring sentence using **{{STRUCTURE_NAME}}**: "<Basic Sentence>"
 ?
 > 🖋️ **Improved:** "<Advanced Sentence>"
-> 💡 **Effect:** <Explanation of stylistic improvement>
+> 💡 **Effect:** <Explain stylistic improvement in VN>
 
 ---
 
 ### Card 9: Metaphor Deconstruction
 
-🧩 **Deconstruct:** In **{{STRUCTURE_NAME}}**, what does "<word>" imply?
+🧩 **Deconstruct:** In **{{STRUCTURE_NAME}}**, what does "<word/part>" imply?
 ?
-> 🔍 **Insight:** <Analysis of metaphorical imagery>
+> 🔍 **Insight:** <Analysis of metaphorical imagery (VN/EN mix)>
 
 ---
 
-### Card 10: Scenario Application
+### Card 10: Scenario Reaction (Emotive)
 
-🎭 **Scenario:** <Specific Role/Situation Prompt>
+🎭 **Scenario:** <Drama/High-stakes Situation>. You feel <Emotion>. Use **{{STRUCTURE_NAME}}**!
 ?
-> 🎬 **Narration:** "<hypothetical_sentence>"
+> 🎬 **Line:** "<The Sentence>"
+> 👨‍🎨 **Director's Note:** <Why this captures the emotion (VN)>
 
 ---
 

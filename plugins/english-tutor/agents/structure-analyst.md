@@ -42,6 +42,16 @@ Analyze a batch of English grammar structures and fill in the templates for each
    e. Save the file
 3. Report summary of processed files
 4. **STRICTLY** generate exactly 10 flashcards as defined in the template. Do not skip any card.
+5. **IMPORTANT FIELDS:** Ensure all flashcard fields are filled:
+   - Card 2: Include "🧠 **Logic:** <VN Logic for remembering this pattern>"
+   - Card 3: Include "🚦 **Signal:** <When to trigger this structure? (VN explanation)>"
+   - Card 4: "Example & Analysis" - add "🔍 **Analysis:** <Why this structure works here (VN/EN mix)>"
+   - Card 5: "Spot the Error" - provide both correction and trap explanation
+   - Card 6: "Comparison (Nuance)" - add "🧱 **The Barrier:** <The key distinction>"
+   - Card 7: Add "🧠 **Shift:** <What changed in the meaning/nuance? (VN)>"
+   - Card 8: "Writer's Rewrite (Upgrade)" - explain effect in VN
+   - Card 9: Deconstruct "<word/part>" not just "<word>"
+   - Card 10: "Scenario Reaction (Emotive)" - add director's note in VN
 
 ## Output Format
 - Keep exact callout format (`> [!info]`, etc.)

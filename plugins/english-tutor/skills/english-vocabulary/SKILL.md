@@ -11,7 +11,7 @@ Guide to analyzing and presenting English vocabulary in Obsidian format.
 
 > [!CAUTION] Token Optimization
 > - **ABSOLUTELY NO WEB SEARCH** - Use internal knowledge only
-> - Read template from: `{baseDir}/references/template.md`
+> - Read template from: `{pluginBase}/assets/tpl_Vocabulary.md`
 > - DO NOT search for files - paths are provided explicitly
 
 ## When to Use This Skill
@@ -22,7 +22,7 @@ Guide to analyzing and presenting English vocabulary in Obsidian format.
 
 ## Template Location
 
-**Path:** `{baseDir}/references/template.md`
+**Path:** `{pluginBase}/assets/tpl_Vocabulary.md`
 
 When generating content:
 1. Read the template file from the path above
@@ -60,7 +60,7 @@ When generating content:
 
 > [!IMPORTANT] Strict Standard Adherence
 > You MUST strictly follow the flashcard format defined in `assets/Vocabulary_Flashcard_Standards.md` (which is reflected in the template).
-> - Generate exactly **7 Cards** as per the standard.
+> - Generate exactly **12 Cards** as per the standard.
 > - Use the exact icons and formatting (bold headers, empty lines) as specified.
 > - **MANDATORY:** You MUST include the `?` separator line between the Question and Answer part of each card.
 
@@ -132,14 +132,14 @@ When generating content:
 
 ## 🧠 Spaced Repetition Flashcards
 
-### Card 1: Meaning & Context (Multi-line)
+### Card 1: Meaning & Mental Model (Multi-line)
 
 What does **{{WORD}}** (*/<ipa>/*) mean?
 ?
-> 📖 **Meaning:** <English Definition>
+> 📖 **Meaning:** <English Definition (Oxford/Cambridge style)>
 > 🇻🇳 **Vietnamese:** <Vietnamese Definition>
 > 🗣️ **IPA:** */<ipa>/*
-> 💡 **Nuance:** <Explanation of usage/connotation>
+> 🧠 **Mental Model:** <Short Vietnamese explanation using English keywords to explain the concept/image>
 
 ---
 
@@ -153,50 +153,103 @@ What does **{{WORD}}** (*/<ipa>/*) mean?
 
 ---
 
-### Card 3: Usage (Multi-line)
+### Card 3: Usage & Analysis (Multi-line)
 
 Use **{{WORD}}** in a sentence.
 ?
-> 📝 **Sentence:** <English Sentence>
-> 🇻🇳 **Translation:** <Vietnamese Sentence>
+> 📝 **Sentence:** <High-quality English Sentence>
+> 🇻🇳 **Translation:** <Vietnamese Translation>
+> 🔍 **Analysis:** <Why is this word perfect here? (VN/EN mix)>
 
 ---
 
-### Card 4: Collocations (Multi-line)
+### Card 4: Collocations by Logic (Multi-line)
 
 List 3 common collocations for **{{WORD}}**.
 ?
 > 🔗 **Collocations:**
-> 1. <Collocation 1>
-> 2. <Collocation 2>
-> 3. <Collocation 3>
+> 1. **<Group 1 e.g., Intensity>:** <Collocation> (<VN note why>)
+> 2. **<Group 2 e.g., Action>:** <Collocation> (<VN note why>)
+> 3. **<Group 3>:** <Collocation>
 
 ---
 
-### Card 5: Root & Word Family (Multi-line)
+### Card 5: Word Upgrade (The "Writer's Rewrite")
+
+🚀 **Upgrade:** Make this boring sentence specific using **{{WORD}}**:
+"<Basic Sentence>"
+?
+> 🖋️ **Advanced:** "<Advanced Sentence>"
+> 💡 **Why it works:** <Explain in VN why the advanced word hits harder (e.g., nuances, imagery)>
+
+---
+
+### Card 6: Nuance Barrier (Comparison)
+
+🆚 **Nuance:** Why use **{{WORD}}** instead of **[[Synonym]]**?
+?
+> **{{WORD}}:** <Usage context (VN explanation)>
+> **[[Synonym]]:** <Usage context (VN explanation)>
+> 🧱 **The Barrier:** <The key difference/wall between them (VN/EN mix)>
+
+---
+
+### Card 7: Scenario Reaction
+
+🎭 **Scenario:** <Specific Context>. You feel <Emotion>. Say it!
+?
+> 🎬 **Line:** "<The Sentence>"
+> 👨‍🎨 **Director's Note:** <Why this fits the vibe (VN)>
+
+---
+
+### Card 8: Etymology Story
+
+🌱 **Origins:** Link the root `<root>` to the meaning of **{{WORD}}**.
+?
+> 📜 **Story:** <Short narrative connecting ancient root to modern meaning (VN/EN mix)>
+
+---
+
+### Card 9: Word Family & Roots
 
 Analyze the root/family of **{{WORD}}**.
 ?
 > 🌱 **Root:** <Language> `<root_word>` (<meaning>)
-> 👨‍👩‍👧 **Family:** 
+> 👨‍👩‍👧 **Family:**
 > - *(<pos>)* <related_word>
 > - *(<pos>)* <related_word>
 
 ---
 
-### Card 6: Context Cloze
-
-> 🗣️ *<Sentence with ==word== hidden>*
->
-> 🇻🇳 **Vi:** <Vietnamese Translation>
-
----
-
-### Card 7: IPA Decoding
+### Card 10: IPA Decoding (with Context)
 
 > 🔊 */<ipa>/*
 ?
-**{{WORD}}** 
+**{{WORD}}**
+> 📖 **Meaning:** <English Definition>
+> 🇻🇳 **Vietnamese:** <Vietnamese Definition>
+
+---
+
+### Card 11: Mistake Hunter (Error Correction)
+
+🕵️ **Fix the Error:** Common mistake with **{{WORD}}**?
+?
+> ❌ **Mistake:** <Common Error>
+> ✅ **Correction:** <Correct Usage>
+> 🧠 **Why:** <Explanation of rule/logic>
+
+---
+
+### Card 12: Antonym Flip
+
+↔️ **Flip:** What is the opposite of **{{WORD}}**?
+?
+> **Antonyms:**
+> - [[<Antonym 1>]] (<Nuance/Context>)
+> - [[<Antonym 2>]]
+> 🧱 **Contrast:** <Brief note on the difference> 
 
 ---
 
@@ -207,12 +260,14 @@ Analyze the root/family of **{{WORD}}**.
 - [ ] Can pronounce correctly
 - [ ] Can use in a sentence
 - [ ] Known collocations
+- [ ] Aware of common mistakes
+- [ ] Knows antonyms
 
 ## Output Requirements
 
 > [!IMPORTANT] Strict Standard Adherence
 > You MUST strictly follow the flashcard format defined in the template above.
-> - Generate exactly **7 Cards** as per the standard.
+> - Generate exactly **12 Cards** as per the standard.
 > - Use the exact icons and formatting (bold headers, empty lines) as specified.
 > - Fill `[[ word ]]` with actual words
 > - Update `status: pending` → `status: done`
