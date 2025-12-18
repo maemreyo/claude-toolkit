@@ -39,7 +39,7 @@ Analyze a batch of English vocabulary words and fill in the templates for each f
    a. Read the target file content
    b. Extract word from filename
    c. Fill each section using your internal knowledge
-   d. Generate 5 flashcards
+   d. Generate strictly 7 flashcards as defined in the template
    e. Update `status: pending` → `status: done`
    f. Save the file
 3. Report summary of processed files

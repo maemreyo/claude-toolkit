@@ -48,6 +48,7 @@ Scan and fill content for English structure files with `status: pending`.
      - Fill `[[ structure ]]` with real concepts
      - Use `|` instead of `/` inside links: `[[take sb|st around]]` (NOT `[[take sb/st around]]`)
      - **Relations/Connections MUST be 2+ words** (e.g., `[[make sense]]`, NOT `[[make]]`)
+     - **STRICTLY generate 10 flashcards** as defined in the template
      - Update `status: pending` → `status: done` for ALL files in this batch
      - **IMPORTANT: Write all content in English**"
    - Expected output: All files in the batch updated successfully
@@ -82,6 +83,7 @@ Scan and fill content for English structure files with `status: pending`.
 - Content filled completely following template
 - Grammar rules detailed and accurate
 - Token usage optimized via batching
+- Flashcards contain 10 cards in correct format
 
 ## Error Handling
 

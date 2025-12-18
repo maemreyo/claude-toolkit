@@ -46,6 +46,7 @@ Scan and fill content for English vocabulary files with `status: pending`.
      - ⛔ DO NOT use web search - use internal knowledge only
      - Maintain original callout format
      - Fill `[[ word ]]` with actual words
+     - **STRICTLY generate 7 flashcards** as defined in the template
      - Update `status: pending` → `status: done` for ALL files in this batch
      - **IMPORTANT: Write all content in English**"
    - Expected output: All files in the batch updated successfully
@@ -80,7 +81,7 @@ Scan and fill content for English vocabulary files with `status: pending`.
 - Content filled completely following template
 - Obsidian links `[[ word ]]` filled with real words
 - Token usage optimized via batching
-- Flashcards contain 5 cards in correct format
+- Flashcards contain 7 cards in correct format
 
 ## Error Handling
 

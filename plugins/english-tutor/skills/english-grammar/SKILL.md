@@ -60,6 +60,11 @@ Use these symbols:
 
 ## Output Format
 
+> [!IMPORTANT] Strict Standard Adherence
+> You MUST strictly follow the flashcard format defined in `assets/Structure_Flashcard_Standards.md` (which is reflected in the template).
+> - Generate exactly **10 Cards** as per the standard.
+> - Use the exact icons and formatting (bold headers, empty lines) as specified.
+
 Keep the entire markdown structure of the template, replacing:
 - `{{STRUCTURE_NAME}}` → actual structure name
 - `...` → actual content

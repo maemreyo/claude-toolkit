@@ -41,6 +41,7 @@ Analyze a batch of English grammar structures and fill in the templates for each
    d. Update `status: pending` → `status: done`
    e. Save the file
 3. Report summary of processed files
+4. **STRICTLY** generate exactly 10 flashcards as defined in the template. Do not skip any card.
 
 ## Output Format
 - Keep exact callout format (`> [!info]`, etc.)
