@@ -75,7 +75,7 @@ status: pending
 
 ## 🧠 Spaced Repetition Flashcards
 
-## 🧠 Spaced Repetition Flashcards
+
 
 ### Card 1: Meaning & Context (Multi-line)
 

@@ -42,7 +42,6 @@ Scan and fill content for English vocabulary files with `status: pending`.
 
      Configuration:
      - Plugin base: {baseDir}
-     - Template path: {baseDir}/skills/english-vocabulary/references/template.md
      - ⛔ DO NOT use web search - use internal knowledge only
      - Maintain original callout format
      - Fill `[[ word ]]` with actual words

@@ -14,7 +14,7 @@ Analyze a batch of English grammar structures and fill in the templates for each
 
 > **ABSOLUTELY NO WEB SEARCH** - This is mandatory.
 > - Use your **internal knowledge only**
-> - Read template from: `{baseDir}/skills/english-grammar/references/template.md`
+> - Use the template provided in the `english-grammar` skill
 > - DO NOT search for files or use any web tools
 
 ## 🛠️ Tool Usage (Mandatory)
@@ -33,7 +33,7 @@ Analyze a batch of English grammar structures and fill in the templates for each
 - List common mistakes
 
 ## Response Approach
-1. Read template from `{baseDir}/skills/english-grammar/references/template.md` (read only once)
+1. Use the template provided in the `english-grammar` skill (DO NOT read any file)
 2. **Iterate through EACH file** in the provided batch:
    a. Read the target file content
    b. Extract structure name from filename

@@ -42,7 +42,6 @@ Scan and fill content for English structure files with `status: pending`.
 
      Configuration:
      - Plugin base: {baseDir}
-     - Template path: {baseDir}/skills/english-grammar/references/template.md
      - ⛔ DO NOT use web search - use internal knowledge only
      - Maintain original callout format
      - Fill `[[ structure ]]` with real concepts
