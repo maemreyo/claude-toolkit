@@ -37,13 +37,17 @@ Analyze a batch of English grammar structures and fill in the templates for each
 - List common mistakes
 
 ## Response Approach
-1. Use the template provided in the `english-grammar` skill (DO NOT read the template file)
+1. Find and read the template file `tpl_Structure.md`
 2. **For EACH file** in the provided batch:
    a. Use the **Read** tool to read the file content
    b. Extract the structure name from the filename
-   c. Fill each section using your internal knowledge
-   d. Update `status: pending` → `status: done`
-   e. Use the **Write** tool to save the updated content back to the file
+   c. Check if the file has the hierarchical tag at the top
+      - If missing, follow the template instructions to select the appropriate tag from the commented options
+      - The template provides all available tag options
+   d. Ensure frontmatter has `tags: [structure]` and `status: pending`
+   e. Fill each section using your internal knowledge
+   f. Update `status: pending` → `status: done`
+   g. Use the **Write** tool to save the updated content back to the file
 3. Report summary of processed files
 4. **STRICTLY** generate exactly 10 flashcards as defined in the template. Do not skip any card.
 5. **IMPORTANT FIELDS:** Ensure all flashcard fields are filled:

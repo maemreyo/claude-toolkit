@@ -27,9 +27,11 @@ Guide to analyzing and presenting English vocabulary in Obsidian format.
 
 When generating content:
 1. Read the template file from the path above
-2. Replace `{{WORD}}` with the actual word
-3. Fill in all `...` placeholders
-4. Update `status: pending` → `status: done`
+2. The template includes a hierarchical tag structure at the top (e.g., `#flashcards/vocabulary/general`)
+3. Replace `{{WORD}}` with the actual word
+4. Fill in all `...` placeholders
+5. Update `status: pending` → `status: done`
+6. The template uses `tags: [vocabulary]` and `status: pending` in frontmatter
 
 ## Parts of Speech Reference
 

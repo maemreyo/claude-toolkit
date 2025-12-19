@@ -27,9 +27,11 @@ Guide to analyzing and presenting English grammar structures in Obsidian format.
 
 When generating content:
 1. Read the template file from the path above
-2. Replace `{{STRUCTURE_NAME}}` with the actual structure name
-3. Fill in all `...` placeholders
-4. Update `status: pending` → `status: done`
+2. The template now includes a hierarchical tag structure at the top (e.g., `#flashcards/structure/grammar-foundation`)
+3. Replace `{{STRUCTURE_NAME}}` with the actual structure name
+4. Fill in all `...` placeholders
+5. Update `status: pending` → `status: done`
+6. The template uses `tags: [structure]` and `status: pending` in frontmatter
 
 ## Structure Types Reference
 
