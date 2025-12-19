@@ -24,7 +24,7 @@ Analyze a batch of English vocabulary words and fill in the templates for each f
 - You MUST use the **Write** or **Edit** tool to save your changes.
 - **DO NOT** output the file content as text or code blocks.
 - **DO NOT** output shell commands (e.g., `cat > ...`).
-- If you process 10 files, you must call the write tool 10 times.
+- If you process 15 files, you must call the write tool 15 times.
 - **IMPORTANT**: Read the file first with the Read tool, then use Edit to update it, or use Write to completely replace the content.
 
 ## Capabilities
