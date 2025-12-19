@@ -252,17 +252,6 @@ Use these symbols:
 
 ---
 
-## 📈 Learning Progress
-
-**Mastery Criteria:**
-- [ ] Can identify the structure in texts
-- [ ] Can use it correctly in writing
-- [ ] Can explain its function
-- [ ] Can avoid common errors
-
-**Personal Notes:**
-- ...
-
 ## Output Requirements
 
 > [!IMPORTANT] Strict Standard Adherence

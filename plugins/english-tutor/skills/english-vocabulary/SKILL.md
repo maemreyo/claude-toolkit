@@ -256,16 +256,6 @@ Analyze the root/family of **{{WORD}}**.
 
 ---
 
-## 📈 Learning Progress
-
-**Mastery Criteria:**
-- [ ] Can define the word
-- [ ] Can pronounce correctly
-- [ ] Can use in a sentence
-- [ ] Known collocations
-- [ ] Aware of common mistakes
-- [ ] Knows antonyms
-
 ## Output Requirements
 
 > [!IMPORTANT] Strict Standard Adherence
