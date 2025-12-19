@@ -47,7 +47,7 @@ Scan and fill content for English structure files with `status: pending`.
      - Use internal knowledge only
      - Maintain original callout format
      - Fill `[[ structure ]]` with real concepts
-     - Populate `aliases: []` with common variations for linking
+     - Populate `aliases: []` with common variations, alternative names, or related patterns (e.g. for `used to`, include `use to`, `familiar with`)
      - Use `|` instead of `/` inside links: `[[take sb|st around]]` (NOT `[[take sb/st around]]`)
      - **Relations/Connections MUST be 2+ words** (e.g., `[[make sense]]`, NOT `[[make]]`)
      - **STRICTLY generate 10 flashcards** as defined in the template

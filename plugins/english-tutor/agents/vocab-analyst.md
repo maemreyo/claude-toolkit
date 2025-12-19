@@ -32,7 +32,7 @@ Analyze a batch of English vocabulary words and fill in the templates for each f
 - Analyze etymology
 - Build word family
 - Find synonyms/antonyms
-- Generate aliases: plurals, tenses, POS variations, possessives, irregular forms
+- Generate aliases: plurals, tenses, POS variations, possessives, irregular forms, related variations, synonyms, and associated concepts
 - List collocations
 
 ## Response Approach
@@ -48,7 +48,7 @@ Analyze a batch of English vocabulary words and fill in the templates for each f
         ii. Replace the top line (or add the tag) at the beginning of the file
         iii. REMOVE the entire HTML comment block (`<!-- ... -->`) containing the options
    d. Ensure frontmatter has `tags: [vocabulary]`, `status: pending`, and `aliases: []`
-      - Populate `aliases: [...]` with all useful variations: Plurals, Tenses, POS variations (noun/adj/adv), Possessives, and Irregular forms (e.g., `went`, `mice` for `go`, `mouse`)
+      - Populate `aliases: [...]` with all useful variations: Plurals, Tenses, POS variations (noun/adj/adv), Possessives, Irregular forms (e.g., `went`, `mice`), related variations, synonyms, and associated concepts (e.g., for `associate`, include `connect`, `link`, `partnership`).
    e. Fill each section using your internal knowledge
    f. Generate strictly 12 flashcards as defined in the template
    g. Update `status: pending` → `status: done`

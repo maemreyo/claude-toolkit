@@ -31,7 +31,7 @@ When generating content:
 2. The template includes a hierarchical tag structure at the top (e.g., `#flashcards/vocabulary/general`)
 3. Replace `{{WORD}}` with the actual word
 4. Fill in all `...` placeholders
-5. Populate `aliases: []` with variations: Plurals, Tenses, POS, Possessives, Irregulars (e.g., `went`, `mice`)
+5. Populate `aliases: []` with variations, related terms, synonyms, and associated concepts
 6. Update `status: pending` → `status: done`
 7. The template uses `tags: [vocabulary]` and `status: pending` in frontmatter
 
