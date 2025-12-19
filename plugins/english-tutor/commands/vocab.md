@@ -25,9 +25,10 @@ Scan and fill content for English vocabulary files with `status: pending`.
 2. **Scan Pending Files**
    - Prompt: "In the found directory, use this efficient command to find pending files:
      ```bash
-     find <directory_path> -name "*.md" -exec grep -l "^status: pending" {} \; | head -n <limit>
+     find '<directory_path>' -name '*.md' -exec grep -l '^status: pending' {} \; | head -n <limit>
      ```
-     - Replace <directory_path> with actual path and <limit> with --limit value if provided
+     - Replace <directory_path> with actual path (keep single quotes!) and <limit> with --limit value if provided
+     - IMPORTANT: Always use single quotes around paths to handle spaces and special characters safely
    - Expected output: List of files to process (one file per line)
 
 3. **User Confirmation (optional)**
