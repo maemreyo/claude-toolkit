@@ -1,162 +1,276 @@
-## 🚨 **Phát hiện: PreToolUse Hooks có Bug nghiêm trọng trong Claude Code CLI**
+#flashcards/vocabulary/general/functional-words
 
-Sau khi search, tôi tìm thấy **nhiều bug reports** về PreToolUse hooks:
+# Topic-Specific (Environment)
+#flashcards/vocabulary/topic-specific/environment/climate-change-global-warming
+#flashcards/vocabulary/topic-specific/environment/pollution-waste-management
+#flashcards/vocabulary/topic-specific/environment/wildlife-conservation
 
-### **Known Issues:**
+# Topic-Specific (Sci-Tech)
+#flashcards/vocabulary/topic-specific/sci-tech/technology
+#flashcards/vocabulary/topic-specific/sci-tech/space-exploration
+#flashcards/vocabulary/topic-specific/sci-tech/scientific-research
 
-PreToolUse and PostToolUse hooks trong Claude Code CLI không hoạt động đúng - các hooks hoặc không execute hoàn toàn, hoặc execute nhưng không thể block tool operations. Một số issues cụ thể bao gồm hooks trả về exit code non-zero hoặc "approve: false" nhưng vẫn không ngăn được tool execution, và hooks configurations thay đổi nhưng không được apply sau restart.
+# Topic-Specific (History & Archaeology)
+#flashcards/vocabulary/topic-specific/history-archaeology/archaeology
+#flashcards/vocabulary/topic-specific/history-archaeology/ancient-civilizations
+#flashcards/vocabulary/topic-specific/history-archaeology/evolution-anthropology
 
-**Các issues đang mở:**
-- #6305: PreToolUse/PostToolUse không execute (Aug 2025)
-- #4362: `approve: false` bị ignore (Jul 2025)  
-- #3672, #3179, #2891, #2814: Nhiều reports tương tự
+# Topic-Specific (Psychology & Behavior)
+#flashcards/vocabulary/topic-specific/psychology-behavior/cognitive-science
+#flashcards/vocabulary/topic-specific/psychology-behavior/child-development
+#flashcards/vocabulary/topic-specific/psychology-behavior/social-psychology
+
+# Topic-Specific (Agriculture & Food)
+#flashcards/vocabulary/topic-specific/agriculture-food/modern-farming
+#flashcards/vocabulary/topic-specific/agriculture-food/food-science
+#flashcards/vocabulary/topic-specific/agriculture-food/history-of-spices
+
+# Topic-Specific (Society & Urbanization)
+#flashcards/vocabulary/topic-specific/society-urbanization/urban-life-city-planning
+#flashcards/vocabulary/topic-specific/society-urbanization/family-gender-relationships
+#flashcards/vocabulary/topic-specific/society-urbanization/globalization-integration
+
+# Topic-Specific (Education)
+#flashcards/vocabulary/topic-specific/education/university-academic-life
+#flashcards/vocabulary/topic-specific/education/online-learning-vs-traditional
+#flashcards/vocabulary/topic-specific/education/child-discipline-parenting
+
+# Topic-Specific (Work & Economy)
+#flashcards/vocabulary/topic-specific/work-economy/advertising-marketing-consumerism
+#flashcards/vocabulary/topic-specific/work-economy/employment-management-styles
+#flashcards/vocabulary/topic-specific/work-economy/business-models
+
+# Topic-Specific (Health)
+#flashcards/vocabulary/topic-specific/health/physical-health-diet
+#flashcards/vocabulary/topic-specific/health/mental-health-stress
+#flashcards/vocabulary/topic-specific/health/healthcare-systems
+
+# Topic-Specific (Arts & Architecture)
+#flashcards/vocabulary/topic-specific/arts-architecture/art-forms
+#flashcards/vocabulary/topic-specific/arts-architecture/architecture
+#flashcards/vocabulary/topic-specific/arts-architecture/media-literature-film
+
+# Topic-Specific (Language & Linguistics)
+#flashcards/vocabulary/topic-specific/language-linguistics/language-acquisition
+#flashcards/vocabulary/topic-specific/language-linguistics/origins-of-language
+#flashcards/vocabulary/topic-specific/language-linguistics/communication-types
+
+# Topic-Specific (Law, Crime & Politics)
+#flashcards/vocabulary/topic-specific/law-crime-politics/crime-punishment
+#flashcards/vocabulary/topic-specific/law-crime-politics/laws-legislation
+#flashcards/vocabulary/topic-specific/law-crime-politics/government-spending
+
+# Topic-Specific (Travel & Culture)
+#flashcards/vocabulary/topic-specific/travel-culture/tourism-types
+#flashcards/vocabulary/topic-specific/travel-culture/cultural-heritage
+#flashcards/vocabulary/topic-specific/travel-culture/migration-immigration
+
+# Topic-Specific (Sport & Leisure)
+#flashcards/vocabulary/topic-specific/sport-leisure/professional-sports
+#flashcards/vocabulary/topic-specific/sport-leisure/extreme-sports
+#flashcards/vocabulary/topic-specific/sport-leisure/leisure-activities
+
+# Phrasal & Idioms
+#flashcards/vocabulary/phrasal-idioms/collocations-by-verb
+#flashcards/vocabulary/phrasal-idioms/collocations-by-topic
+#flashcards/vocabulary/phrasal-idioms/idioms-for-speaking
+-->
+
+---
+tags:
+  - vocabulary
+aliases: [accidental, accidentally] # Variations to link: Plurals, Tenses, POS, Possessives, Irregulars
+status: done
+ref:
+  - [[Cam 20 Listening Test 04]]
 
 ---
 
-## ✅ **Giải pháp thực tế: Defense in Depth**
+> [!info] Word Analysis
+> **IPA:** /ˌæksɪˈdentəli/
+> **Part of Speech:** adverb
+> **CEFR Level:** B1
+> **Register:** informal/formal
+> **Etymology:** Latin accidens "happening by chance"
 
-Vì hooks không reliable, cần dùng **multi-layered approach**:
+> [!abstract] Meanings
+> **Root Meaning:** by chance, without intention
+>
+> **Context Meaning:** occurring by chance; unintentionally
+>
+> **Vietnamese Translation:**
+> - **Direct:** tình cờ, vô tình
+> - **Contextual:** một cách không chủ đích, ngẫu nhiên
+>
+> **Nuances:**
+> - Emphasizes lack of intention or planning
+> - Often used to describe mistakes or unexpected events
 
-### **Layer 1: Prompt-based Restrictions** (đã có)
+> [!tip] 💡 Word Vibe & Story
+> **Personality:** Neutral, matter-of-fact
+> **Memory Hook:** "Accident" + "ally" → happening by chance
+> **📖 Etymology Story:** From Latin "accidens" (happening by chance) → "accidental" (adj) → "accidentally" (adv), describing actions that occur without planning or intention
 
-Tăng cường trong **vocab-analyst.md**:
+> [!note] Relations
+> **Word Family:**
+> - **Noun:** [[accident]] /ˈæksɪdənt/
+> - **Verb:** [[accident]] /ˈæksɪdənt/
+> - **Adj:** [[accidental]] /ˌæksɪˈdentl/
+> - **Adv:** [[accidentally]] /ˌæksɪˈdentəli/
+>
+> **Synonyms:**
+> - [[unintentionally]] /ˌʌnɪnˈtenʃənəli/ : without planning
+> - [[inadvertently]] /ˌɪnədˈvɜːtəntli/ : without awareness
+>
+> **Antonyms:**
+> - [[deliberately]] /dɪˈlɪbərətli/ : intentionally
+> - [[intentionally]] /ɪnˈtenʃənəli/ : on purpose
 
-```markdown
-## ⛔ CRITICAL: Tool Restrictions - ENFORCED BY INSTRUCTIONS
+> [!success] Context & Usage
+> **Collocations:**
+> 1. accidentally delete
+> 2. accidentally break
+> 3. accidentally discover
+>
+> **1. Example Context 1**
+> - **Sentence:** I accidentally deleted the important file.
+> - **Translation:** Tôi đã vô tình xóa tệp quan trọng.
+>
+> **2. Example Context 2**
+> - **Sentence:** She accidentally discovered a new shortcut to work.
+> - **Translation:** Cô ấy tình cờ phát hiện ra một lối tắt mới đến nơi làm việc.
 
-**⚠️ INFRASTRUCTURE NOTE:** PreToolUse hooks are currently not functional in Claude Code CLI (known bugs #6305, #4362). Therefore, tool restrictions are enforced via instructions and post-validation.
+> [!failure] Common Mistakes
+> **1. Adverb Placement**
+> - ❌ **Mistake:** I deleted accidentally the file.
+> - ✅ **Correction:** I accidentally deleted the file.
+> - **Why:** In English, adverbs like "accidentally" typically come before the main verb or at the beginning of the sentence.
 
-**ABSOLUTELY FORBIDDEN TOOLS:**
-- ❌ `web_search` - NEVER use under ANY circumstances
-- ❌ `web_fetch` - Do not fetch external content
-- ❌ Internet access tools
-
-**WHY THIS RESTRICTION EXISTS:**
-Vocabulary analysis must be consistent across all 120+ files. Web sources change daily, making standardization impossible.
-
-**IF YOU FEEL TEMPTED TO SEARCH:**
-1. STOP immediately
-2. Use `[research needed: topic]` placeholder instead
-3. Continue with your best internal knowledge
-
-**SELF-CHECK before EVERY response:**
-- [ ] Did I attempt web_search? → If YES, this is a VIOLATION
-- [ ] Am I using only training data? → If NO, STOP and reconsider
-- [ ] Did I complete all 12 flashcards? → If NO, finish them first
-
-**COMPLIANCE VERIFICATION:**
-Your output will be reviewed. Any use of web tools will require full reprocessing of the batch.
-```
-
-### **Layer 2: Post-Validation Script**
-
-Tạo `.claude/scripts/validate_vocab_output.sh`:
-
-```bash
-#!/bin/bash
-# Post-validation for vocab-analyst outputs
-
-LOG_FILE="/tmp/vocab-analyst-validation.log"
-VOCAB_DIR="glean/20_Vocabulary"
-
-echo "[$(date)] Starting validation..." >> "$LOG_FILE"
-
-# Check for web_search traces in recent outputs
-if grep -r "web_search\|web_fetch" "$VOCAB_DIR" 2>/dev/null | grep -q "status: done"; then
-    echo "❌ VIOLATION: Web tools detected in processed files" | tee -a "$LOG_FILE"
-    echo "Please review and reprocess these files using internal knowledge only."
-    exit 1
-fi
-
-# Check for incomplete files (missing cards)
-for file in "$VOCAB_DIR"/*.md; do
-    if grep -q "status: done" "$file"; then
-        card_count=$(grep -c "^####.*Card [0-9]" "$file")
-        if [ "$card_count" -lt 12 ]; then
-            echo "⚠️  WARNING: $file has only $card_count/12 cards" | tee -a "$LOG_FILE"
-        fi
-    fi
-done
-
-echo "[$(date)] Validation complete" >> "$LOG_FILE"
-exit 0
-```
-
-Run sau mỗi batch:
-```bash
-chmod +x .claude/scripts/validate_vocab_output.sh
-.claude/scripts/validate_vocab_output.sh
-```
-
-### **Layer 3: Agent Self-Monitoring**
-
-Thêm vào **vocab.md** (command orchestrator):
-
-```markdown
-## Phase 3.5: Post-Processing Validation
-
-After EACH batch completes:
-1. **Scan processed files for violations:**
-   ```bash
-   grep -l "web_search\|web_fetch\|https://\|http://" {processed_files}
-   ```
-2. **If violations found:**
-   - Mark those files back to `status: pending`
-   - Re-queue them with EMPHATIC prompt:
-     "CRITICAL REMINDER: Previous attempt used web tools (FORBIDDEN).
-      This batch MUST use ONLY internal knowledge. No exceptions."
-3. **Report:**
-   - Clean files: X/Y
-   - Violated files requiring reprocessing: [list]
-```
-
-### **Layer 4: Manual Spot Check** 
-
-Sau khi chạy command:
-```bash
-# Quick audit
-grep -r "web_search\|Wikipedia\|source:" glean/20_Vocabulary/ | grep "status: done"
-
-# If empty output → Good!
-# If found violations → Reprocess those files
-```
+> [!quote]- Context Source
+> **Quote:** "I accidentally pressed the wrong button and lost all my work."
+> **Source:** [[Cam 20 Listening Test 04]]
 
 ---
 
-## 🎯 **Recommended Workflow**
+## 🧠 Spaced Repetition Flashcards
 
-```bash
-# 1. Run vocab command
-/english-tutor:vocab --path=glean/20_Vocabulary --chunk=10
+### Card 1: Meaning & Mental Model (Multi-line) [Phase 1: Foundation]
 
-# 2. Post-validation (automated)
-.claude/scripts/validate_vocab_output.sh
-
-# 3. Spot check (manual)
-grep -c "status: done" glean/20_Vocabulary/*.md
-# Expected: Same as "processed successfully" count
-
-# 4. If violations found, reset and reprocess
-for file in $(grep -l "web_search" glean/20_Vocabulary/*.md); do
-  sed -i '' 's/status: done/status: pending/' "$file"
-done
-```
+What does **accidentally** (*/ˌæksɪˈdentəli/*) mean?
+?
+> 📖 **Meaning:** By chance; without intention or planning
+> 🇻🇳 **Vietnamese:** Tình cờ, vô tình, không chủ đích
+> 🗣️ **IPA:** */ˌæksɪˈdentəli/*
+> 🧠 **Mental Model:** Hành động xảy ra mà không có chủ đích trước, giống như khi bạn làm rơi đồ vật một cách ngẫu nhiên
 
 ---
 
-## 📊 **Why This Approach Works**
+### Card 2: Production (Reverse) [Phase 2: Activation]
 
-| Method | Reliability | When It Catches Violations |
-|--------|------------|---------------------------|
-| Hooks (broken) | ❌ 0% | Never (doesn't work) |
-| Prompt instructions | ⚠️ 60% | During execution (if agent follows) |
-| Post-validation script | ✅ 95% | After execution (catches most) |
-| Manual spot check | ✅ 100% | After execution (catches all) |
-| **Combined** | **✅ 95%+** | **Multiple checkpoints** |
+**Definition:** "By chance; without intention or planning"
+**Vietnamese:** Tình cờ, vô tình
+→ **Target Word?**
+?
+**accidentally** (*/ˌæksɪˈdentəli/*)
 
 ---
 
-Bạn có muốn tôi tạo artifact với:
-1. Updated **vocab-analyst.md** với stronger restrictions
-2. Validation script
-3. Updated **vocab.md** với post-processing checks?
+### Card 3: Usage & Analysis (Multi-line) [Phase 2: Activation]
+
+Use **accidentally** in a sentence.
+?
+> 📝 **Sentence:** I accidentally spilled coffee on my new shirt this morning.
+> 🇻🇳 **Translation:** Sáng nay tôi đã vô tình làm đổ cà phê lên áo sơ mi mới.
+> 🔍 **Analysis:** "Accidentally" hoàn hảo ở đây vì nó nhấn mạnh hành động làm đổ cà phê là không chủ đích và không được lên kế hoạch
+
+---
+
+### Card 4: Collocations by Logic (Multi-line) [Phase 2: Activation]
+
+List 3 common collocations for **accidentally**.
+?
+> 🔗 **Collocations:**
+> 1. **Action Verbs:** accidentally delete (xóa nhầm), accidentally break (làm hỏng nhầm), accidentally drop (làm rơi nhầm)
+> 2. **Discovery:** accidentally discover (tình cờ phát hiện), accidentally find (tình cờ tìm thấy)
+> 3. **Communication:** accidentally overhear (vô tình nghe thấy), accidentally send (gửi nhầm)
+
+---
+
+### Card 5: Word Upgrade (The "Writer's Rewrite") [Phase 4: Mastery]
+
+🚀 **Upgrade:** Make this boring sentence specific using **accidentally**:
+"I made a mistake and deleted the file."
+?
+> 🖋️ **Advanced:** "I accidentally deleted the important file while trying to save it."
+> 💡 **Why it works:** "Accidentally" tạo ra hình ảnh cụ thể hơn về hành động không chủ đích, làm cho câu chuyện trở nên chân thực và dễ liên quan hơn
+
+---
+
+### Card 6: Nuance Barrier (Comparison) [Phase 3: Differentiation]
+
+🆚 **Nuance:** Why use **accidentally** instead of **[[unintentionally]]**?
+?
+> **accidentally:** Thường dùng trong tình huống hàng ngày, không trang trọng, nhấn mạnh sự ngẫu nhiên
+> **[[unintentionally]]:** Trang trọng hơn, thường dùng trong văn viết hoặc ngữ cảnh pháp lý, nhấn mạnh thiếu chủ đích
+> 🧱 **The Barrier:** Accidentally = everyday randomness; Unintentionally = formal lack of intent
+
+---
+
+### Card 7: Scenario Reaction [Phase 4: Mastery]
+
+🎭 **Scenario:** You're explaining to your boss why the report wasn't submitted on time. You feel embarrassed. Say it!
+?
+> 🎬 **Line:** "I'm so sorry, I accidentally saved the file to the wrong folder and couldn't find it this morning."
+> 👨‍🎨 **Director's Note:** "Accidentally" ở đây thể hiện sự chân thành và trách nhiệm, không bào chữa mà giải thích nguyên nhân thực tế
+
+---
+
+### Card 8: Etymology Story [Phase 4: Mastery]
+
+🌱 **Origins:** Link the root `accidens` to the meaning of **accidentally**.
+?
+> 📜 **Story:** Từ Latin "accidens" (xảy ra, happen) → "accidental" (tình cờ) → "accidentally" (một cách tình cờ), mô tả những hành động xảy ra ngoài tầm kiểm soát và không có chủ đích từ trước
+
+---
+
+### Card 9: Word Family & Roots [Phase 5: Addition]
+
+Analyze the root/family of **accidentally**.
+?
+> 🌱 **Root:** Latin `cadere` (to fall)
+> 👨‍👩‍👧 **Family:**
+> - *(noun)* [[accident]] /ˈæksɪdənt/ (sự cố, tai nạn)
+> - *(adj)* [[accidental]] /ˌæksɪˈdentl/ (tình cờ, không chủ đích)
+> - *(adv)* [[accidentally]] /ˌæksɪˈdentəli/ (một cách tình cờ)
+
+---
+
+### Card 10: IPA Decoding (with Context) [Phase 1: Foundation]
+
+> 🔊 */ˌæksɪˈdentəli/*
+?
+**accidentally**
+> 📖 **Meaning:** By chance; without intention
+> 🇻🇳 **Vietnamese:** Tình cờ, vô tình
+
+---
+
+### Card 11: Mistake Hunter (Error Correction) [Phase 3: Differentiation]
+
+🕵️ **Fix the Error:** I deleted accidentally the file.
+?
+> ✅ **Correction:** I accidentally deleted the file. / I deleted the file accidentally.
+> 🧠 **Why:** Trong tiếng Anh, trạng từ như "accidentally" thường đứng trước động từ chính hoặc ở đầu câu, không giữa động từ và tân ngữ
+
+---
+
+### Card 12: Antonym Flip [Phase 3: Differentiation]
+
+↔️ **Flip:** What is the opposite of **accidentally**?
+?
+> **Antonyms:**
+> - [[deliberately]] (cố ý, chủ đích) - Used when actions are planned and intentional
+> - [[intentionally]] (có chủ đích)
+> 🧱 **Contrast:** Accidentally emphasizes lack of planning, while its antonyms indicate purposeful action
+
+---
